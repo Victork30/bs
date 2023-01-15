@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: cr.lermanonline.com/test
+  tag: "0.1"
+
+ingress:
+  enabled: false
+
+configMap:
+  config:
+    config.properties: |+
+        HEALTHY_HOST=localhost
+        HEALTHY_PORT=8080

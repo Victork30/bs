@@ -10,3 +10,9 @@ Microservice expects to get a JSON formatted list on a /packages endpoint. Examp
     "package3": "bffs",
     "package4": "express"
 }
+
+Deploy helm chart with command:
+cd ./chart
+helm install resty -f resty.yaml .
+helm install healthy -f healthy.yaml .
+
