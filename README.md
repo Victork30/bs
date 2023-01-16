@@ -11,6 +11,12 @@ Microservice expects to get a JSON formatted list on a /packages endpoint. Examp
     "package4": "express"
 }
 
+Deploy nginx ingress controller with terraform (make sure your kubeconfig file is located at ~/.kube/config):
+
+cd ./terraform
+terraform init
+terraform apply
+
 Deploy helm chart with command:
 cd ./chart
 helm install resty -f resty.yaml .
