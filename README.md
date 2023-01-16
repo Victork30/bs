@@ -3,6 +3,9 @@ Microservice - REST API with two endpoints. Has a config file src/config.propert
 HEALTHY_HOST=localhost
 HEALTHY_PORT=8080
 
+HEALTHY_HOST - healthy service name
+HEALTHY_PORT - healthy service port
+
 Microservice expects to get a JSON formatted list on a /packages endpoint. Example: 
 {
     "package1": "list-it",
