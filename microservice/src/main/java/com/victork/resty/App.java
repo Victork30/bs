@@ -1,5 +1,5 @@
-package com.victork.blindspot.resty;
-/*
+package com.victork.resty;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -9,16 +9,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.*;
-*/
-//@SpringBootApplication
-//@RestController
+
+@SpringBootApplication
+@RestController
 public class App {
      
 	public static void main(String[] args) {
-		//SpringApplication.run(App.class, args);
-		System.out.println("security-check responce");
+		SpringApplication.run(App.class, args);
 	}
-/*
+
 	@PostMapping("/security-check")
 	public ResponseEntity<String> handleMessage(@RequestBody String message) {
 		System.out.println("security-check " + message);
@@ -52,10 +51,9 @@ public class App {
 				String.class);
 
 		System.out.println("security-check responce " + response.getBody());
-		//SecurityChecker securityChecker = new SecurityChecker();
-		//securityChecker.check(request.getBody());
+		SecurityChecker securityChecker = new SecurityChecker();
+		securityChecker.check(request.getBody());
 		// Return a success response
 		return new ResponseEntity<>(response.getBody(), HttpStatus.OK);
 	}
-*/
 }

@@ -1,4 +1,4 @@
-package com.victork.blindspot.resty;
+package com.victork.resty;
 
 import static org.junit.Assert.assertTrue;
 

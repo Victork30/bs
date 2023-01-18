@@ -1,5 +1,4 @@
-/*
-package com.victork.blindspot.resty;
+package com.victork.resty;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
@@ -86,4 +85,3 @@ public class SecurityChecker {
         return null;
     }
 }
-*/
